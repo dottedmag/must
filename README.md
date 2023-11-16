@@ -33,7 +33,7 @@ Go tacitly acknowledges it by providing functions `regex.MustCompile` and
 
 The library is proven to be useful in the following situations:
 
-- Programming errors in all kinds of code, similar to `regex.MustCompile`,
+- Programming errors in all kinds of code, similar to `regexp.MustCompile`,
 - Filesystem-related errors in a build system,
 - Fatal errors in server-side SaaS code.
 
