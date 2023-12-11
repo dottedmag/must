@@ -64,16 +64,6 @@ func OK4[T1, T2, T3, T4 any](t1 T1, t2 T2, t3 T3, t4 T4, err error) (T1, T2, T3,
 // Do calls the function and panics on error.
 //
 // For use primarily in defer statements.
-//
-// BAD example:
-//
-//     // f.Close will be called now, must.OK will be called on function exit
-//     defer must.OK(f.Close())
-//
-// GOOD example:
-//
-//     defer must.Do(f.Close)
-//
 func Do(fn func() error) {
 	OK(fn())
 }
